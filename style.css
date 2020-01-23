@@ -1,12 +1,173 @@
-html { 
-    background: url(images/bg.jpg) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  background: url(Resources/firstpage.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
+.title{
+  /* grid-column: 1/-1;  with this the grid will cover the whole row*/ 
+  grid-area: header;
+  grid-column: span 5;
+  text-align: center;
+  
+}
+
+.butt{
+  display: grid;
+
+}
+
+.container{
+/* display: grid;
+grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+grid-template-rows: 1fr; */
+display: flex;
+align-items: center;
+justify-content: center;
+height: 50vh;
+}
+
+a{
+  color:#e5f1ff;
+
+}
+
+}
+h1{
+  text-align: center;
+  color: brown;
+  font-weight: 1000;
+  text-transform: uppercase;
+}
+.cover{
+  width: 100%;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  background: url(./Resources/firstpage.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* Botton design starts here */
+.button {
+    border-top: 1px solid #ffffff;
+    background: #d8e4ed;
+    background: -webkit-gradient(linear, left top, left bottom, from(#82e879), to(#d8e4ed));
+    background: -webkit-linear-gradient(top, #82e879, #d8e4ed);
+    background: -moz-linear-gradient(top, #82e879, #d8e4ed);
+    background: -ms-linear-gradient(top, #82e879, #d8e4ed);
+    background: -o-linear-gradient(top, #82e879, #d8e4ed);
+    padding: 18px 36px;
+    -webkit-border-radius: 28px;
+    -moz-border-radius: 28px;
+    border-radius: 28px;
+    -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+    -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+    box-shadow: rgba(0,0,0,1) 0 1px 0;
+    text-shadow: rgba(0,0,0,.4) 0 1px 0;
+    color: #6e6e6e;
+    font-size: 19px;
+    font-family: Georgia, serif;
+    text-decoration: none;
+    vertical-align: middle;
+    }
+  .button:hover {
+    border-top-color: #9ce09f;
+    background: #9ce09f;
+    color: #000000;
+    }
+  .button:active {
+    border-top-color: #b2ffbe;
+    background: #b2ffbe;
     }
 
-body{
 
-font-family: Georgia, 'Times New Roman', Times, serif;
+
+
+/* Heading design starts here */
+    @import url(https://fonts.googleapis.com/css?family=Lato:900);
+*, *:before, *:after{
+  box-sizing:border-box;
+}
+
+.letter{
+  display: inline-block;
+  font-weight: 500;
+  font-size: 4em;
+  margin: 0.2em;
+  position: relative;
+  color: #00B4F1;
+  transform-style: preserve-3d;
+  perspective: 400;
+  z-index: 1;
+}
+.letter:before, .letter:after{
+  position:absolute;
+  content: attr(data-letter);
+  transform-origin: top left;
+  top:0;
+  left:0;
+}
+.letter, .letter:before, .letter:after{
+  transition: all 0.3s ease-in-out;
+}
+.letter:before{
+  color: #fff;
+  text-shadow: 
+    -1px 0px 1px rgba(255,255,255,.8),
+    1px 0px 1px rgba(0,0,0,.8);
+  z-index: 3;
+  transform:
+    rotateX(0deg)
+    rotateY(-15deg)
+    rotateZ(0deg);
+}
+.letter:after{
+  color: rgba(0,0,0,.11);
+  z-index:2;
+  transform:
+    scale(1.08,1)
+    rotateX(0deg)
+    rotateY(0deg)
+    rotateZ(0deg)
+    skew(0deg,1deg);
+}
+.letter:hover:before{
+  color: #fafafa;
+  transform:
+    rotateX(0deg)
+    rotateY(-40deg)
+    rotateZ(0deg);
+}
+.letter:hover:after{
+  transform:
+    scale(1.08,1)
+    rotateX(0deg)
+    rotateY(40deg)
+    rotateZ(0deg)
+    skew(0deg,22deg);
+}
+
+.push{
+  margin-left: auto;
+}
+.sticky{
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+
+.about{
+  padding-top: 100px;
+  align-items: center;
+  align-content: center;
 }
