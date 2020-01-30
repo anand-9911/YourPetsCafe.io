@@ -31,7 +31,7 @@ grid-template-rows: 1fr; */
 display: flex;
 align-items: center;
 justify-content: center;
-height: 50vh;
+height: 100vh;
 }
 
 a{
@@ -170,4 +170,23 @@ h1{
   padding-top: 100px;
   align-items: center;
   align-content: center;
+}
+h2{
+  color: #00B4F1;
+  text-align: center;
+  font-weight: bolder;
+}
+p{
+  color: mintcream;
+  text-align: center;
+  font-weight: bolder;
+}
+
+
+li img {
+  width: 100px;
+  height: 100px;
+}
+.logo{
+  padding-right: 2%;
 }
